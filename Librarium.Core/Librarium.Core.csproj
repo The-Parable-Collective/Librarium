@@ -6,9 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Resources\Documents\CHANGELOG.md">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <Folder Include="Resources\Documents\" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="cd ..&#xD;&#xA;powershell.exe -ExecutionPolicy Unrestricted -file pre-build.ps1" />
