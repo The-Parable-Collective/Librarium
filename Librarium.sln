@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Librarium.Core", "Librarium.Core\Librarium.Core.csproj", "{7A2917B9-6ADF-483E-A309-E6B7184341D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Librarium", "Librarium", "{91113BD5-5B79-4514-B071-E904A66F6DA5}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A2917B9-6ADF-483E-A309-E6B7184341D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2917B9-6ADF-483E-A309-E6B7184341D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2917B9-6ADF-483E-A309-E6B7184341D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2917B9-6ADF-483E-A309-E6B7184341D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D42CDC3-EF63-4284-91BA-0093FC0F3C00}
+	EndGlobalSection
+EndGlobal
