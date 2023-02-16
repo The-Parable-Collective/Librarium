@@ -14,3 +14,5 @@
 
 # Librarium
 Reusable Common Code and Reduction of Boilerplate.
+
+Please refer to the [wiki](https://github.com/The-Parable-Collective/Librarium/wiki) for documentation, design philosophy, and usage.
