@@ -1,7 +1,7 @@
 # Changelog
 
 <a name="1.0.0"></a>
-## 1.0.0 (2023-02-15)
+## 1.0.0 (2023-02-16)
 
 ### Breaking and Major Changes
 
