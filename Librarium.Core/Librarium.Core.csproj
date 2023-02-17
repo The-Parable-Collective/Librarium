@@ -3,9 +3,26 @@
   <PropertyGroup>
     <TargetFrameworks>net5.0;netcoreapp3.1;net472;net48;netstandard2.1</TargetFrameworks>
     <LangVersion>Latest</LangVersion>
-    <FileVersion>1.0.0.0</FileVersion>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.3</FileVersion>
+    <AssemblyVersion>1.0.0.3</AssemblyVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>The Headmaster</Authors>
+    <Company>The Parable Collective</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>Librarium.png</PackageIcon>
+    <PackageIconUrl />
+    <Description>Reusable Common Code and Reduction of Boilerplate.</Description>
+    <Copyright>The Parable Collective LLC</Copyright>
+    <RepositoryUrl>https://github.com/The-Parable-Collective/Librarium</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageProjectUrl>https://github.com/The-Parable-Collective/Librarium</PackageProjectUrl>
+    <PackageReleaseNotes>✨ Added string extensions.</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Resources\Documents\" />
@@ -13,6 +30,13 @@
 
   <ItemGroup>
     <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Librarium.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="cd ..&#xD;&#xA;powershell.exe -ExecutionPolicy Unrestricted -file pre-build.ps1" />
