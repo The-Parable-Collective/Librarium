@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using JetBrains.Annotations;
 
-namespace Librarium.Core.Extensions
+namespace System.Collections.Generic
 {
     /// <summary>
     /// Extensions for transforming, mutating, and generating <see cref="IEnumerable{T}" /> collections.
