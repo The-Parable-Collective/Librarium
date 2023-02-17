@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using JetBrains.Annotations;
 
 namespace Librarium.Core.Extensions
@@ -31,5 +32,31 @@ namespace Librarium.Core.Extensions
                 }
             }
         }
+
+        /// <summary>
+        /// Takes the specified page with the specified size from the collection.
+        /// </summary>
+        /// <typeparam name="T">
+        /// The type of the items in the collection.
+        /// </typeparam>
+        /// <param name="amount">
+        /// The amount of items in the collection that should be in each page.
+        /// </param>
+        /// <param name="page">
+        /// The page to take. If a number is not specified, takes the first page. Observe that <paramref name="page" /> is 0-based;
+        /// for example page 1 is the second page in the collection.
+        /// </param>
+        /// <returns>
+        /// Returns the <see cref="IEnumerable{T}" />.
+        /// </returns>
+        /// <remarks>
+        /// This method is <c>non-pop</c>; It will not enumerate the collection.  If <paramref name="page" /> is the last page, and
+        /// the remaining items are less than <paramref name="amount" />, the remaining items are returned and will not produce
+        /// trailing null items. If <paramref name="page" /> is out of range, no items will be returned.
+        /// </remarks>
+        [NotNull, Pure, LinqTunnel]
+        public static IEnumerable<T> TakePage<T>([NotNull] this IEnumerable<T> collection,
+            [ValueRange(0, int.MaxValue)] int amount, [ValueRange(0, int.MaxValue)] int page = 0)
+            => collection.Skip(amount * page).Take(amount);
     }
 }
