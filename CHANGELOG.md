@@ -1,5 +1,18 @@
 # Changelog
 
+<a name="1.0.1"></a>
+## 1.0.1 (2023-02-17)
+
+### New Features
+
+
+ [[555f4ba](https://github.com/The-Parable-Collective/Librarium/commit/555f4bab1bdc24726e8cc780b625b355928a6fe1)]
+- ✨ Added StringBuilder extensions and IEnumerable extensions.
+- 📝 Added Glossary for novel terminology.
+
+
+
+
 <a name="1.0.0"></a>
 ## 1.0.0 (2023-02-16)
 
