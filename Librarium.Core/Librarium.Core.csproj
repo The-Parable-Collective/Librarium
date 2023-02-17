@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>net5.0;netcoreapp3.1;net472;net48;netstandard2.1</TargetFrameworks>
     <LangVersion>Latest</LangVersion>
-    <FileVersion>1.0.1.0</FileVersion>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.1</FileVersion>
+    <AssemblyVersion>1.0.1.1</AssemblyVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>The Headmaster</Authors>
     <Company>The Parable Collective</Company>
@@ -16,8 +16,10 @@
     <RepositoryUrl>https://github.com/The-Parable-Collective/Librarium</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageProjectUrl>https://github.com/The-Parable-Collective/Librarium</PackageProjectUrl>
-    <PackageReleaseNotes>✨ Added string extensions.</PackageReleaseNotes>
+    <PackageReleaseNotes>✨ Added StringBuilder extensions and IEnumerable extensions.
+      📝 Added Glossary for novel terminology.</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
