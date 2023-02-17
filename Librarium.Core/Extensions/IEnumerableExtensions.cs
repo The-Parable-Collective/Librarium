@@ -15,7 +15,11 @@ namespace Librarium.Core.Extensions
         /// </summary>
         /// <typeparam name="T">The type of the items in this <see cref="IEnumerable{T}" />.</typeparam>
         /// <param name="action">The <see cref="Action{T}" /> to perform for each item in the <see cref="IEnumerable{T}" />.</param>
-        /// <remarks>If <paramref name="action" /> is <see cref="null" />, <see cref="ForEach{T}" /> will simply do nothing.</remarks>
+        /// <remarks>
+        /// If <paramref name="action" /> is <see cref="null" />, <see cref="ForEach{T}" /> will simply do nothing. If
+        /// <paramref name="action" /> is not <see cref="null" />, <see cref="ForEach{T}" /> is <c>pop</c>; It will enumerate the
+        /// collection.
+        /// </remarks>
         public static void ForEach<T>([NotNull, InstantHandle, ItemCanBeNull]
             this IEnumerable<T> source, [CanBeNull] Action<T> action)
         {
