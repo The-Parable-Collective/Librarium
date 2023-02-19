@@ -32,7 +32,7 @@ namespace System.Collections.Generic
         }
 
         /// <summary>
-        /// Takes the specified page with the specified size from the collection.
+        /// Takes the specified page with the specified size from this collection.
         /// </summary>
         /// <typeparam name="T">
         /// The type of the items in the collection.

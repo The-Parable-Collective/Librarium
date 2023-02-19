@@ -9,10 +9,10 @@ namespace Librarium.Core.Extensions
     public static class BooleanExtensions
     {
         /// <summary>
-        /// Toggles a <see cref="bool" /> value.
+        /// Toggles this <see cref="bool" /> value.
         /// </summary>
         /// <returns>
-        /// Returns the <see cref="bool" /> as a reference.
+        /// Returns this <see cref="bool" /> as a reference.
         /// </returns>
         /// <remarks>
         /// This method works by reference, so the return value is of optional use.
@@ -24,15 +24,15 @@ namespace Librarium.Core.Extensions
         }
 
         /// <summary>
-        /// Collapses a nullable <see cref="bool" /> to the specified value if it is <see cref="null" />. Else does nothing.
+        /// Collapses this nullable <see cref="bool" /> to the specified value if it is <see cref="null" />. Else does nothing.
         /// </summary>
         /// <param name="pullResistValue">
-        /// The value to collapse the <see cref="bool" /> to.
+        /// The value to collapse this <see cref="bool" /> to.
         /// </param>
         /// <returns>
-        /// Returns the nullable <see cref="bool" /> as a reference. Note that this will never be null after the method returns
+        /// Returns this nullable <see cref="bool" /> as a reference. Note that this will never be null after the method returns
         /// despite
-        /// returning the nullable <see cref="bool" /> (which is the point).
+        /// returning this nullable <see cref="bool" /> (which is the point).
         /// </returns>
         /// <remarks>
         /// This method works by reference, so the return value is of optional use.
