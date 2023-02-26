@@ -1,4 +1,5 @@
-﻿using JetBrains.Annotations;
+﻿using System;
+using JetBrains.Annotations;
 
 namespace Librarium.Core.Extensions
 {
@@ -8,6 +9,34 @@ namespace Librarium.Core.Extensions
     [PublicAPI]
     public static class MathExtensions
     {
+        #region Round
+
+        /// <summary>
+        /// Rounds this <see cref="double" /> to a <see cref="long" />.
+        /// </summary>
+        /// <param name="mode">
+        /// Determines which way to round.
+        /// </param>
+        public static long RoundToLong(this double d, MidpointRounding mode) => Convert.ToInt64(Math.Round(d, mode));
+
+        /// <summary>
+        /// Rounds this <see cref="decimal" /> to a <see cref="long" />.
+        /// </summary>
+        /// <param name="mode">
+        /// Determines which way to round.
+        /// </param>
+        public static long RoundToLong(this decimal d, MidpointRounding mode) => Convert.ToInt64(Math.Round(d, mode));
+
+        /// <summary>
+        /// Rounds this <see cref="float" /> to a <see cref="long" />.
+        /// </summary>
+        /// <param name="mode">
+        /// Determines which way to round.
+        /// </param>
+        public static long RoundToLong(this float f, MidpointRounding mode) => Convert.ToInt64(Math.Round(f, mode));
+
+        #endregion
+
         #region Add
 
         /// <summary>
