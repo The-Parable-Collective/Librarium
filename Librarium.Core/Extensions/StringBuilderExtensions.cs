@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using JetBrains.Annotations;
-using Librarium.Core.Extensions;
 
 namespace System.Text
 {
